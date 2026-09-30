@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" data-i18n="meta_desc" content="Invest Miraflores — Agencia de Inversión del Distrito de Miraflores, Perú. Conectamos a Miraflores con el mundo a través de inversión, cooperación y alianzas estratégicas." />
+<meta name="theme-color" content="#00875A" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Invest Miraflores — Agencia de Inversión" />
+<meta property="og:description" content="Conectamos a Miraflores con el mundo a través de inversión, cooperación y alianzas estratégicas." />
+<meta property="og:locale" content="es_PE" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<title>Invest Miraflores — Agencia de Inversión del Distrito de Miraflores</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"GovernmentOrganization","name":"Invest Miraflores","alternateName":"Agencia de Inversión del Distrito de Miraflores","description":"Agencia de atracción de inversión y cooperación internacional del distrito de Miraflores, Perú.","areaServed":{"@type":"City","name":"Miraflores, Lima, Perú"},"inLanguage":["es","en"]}
+</script>
+<style>
+/* ===== TOKENS — Identidad Miraflores: verde institucional + acento cálido ===== */
+:root{
+  --verde-900:#00432C; --verde-700:#006644; --verde:#00875A; --verde-400:#2FB185;
+  --arena:#F3EEE4; --coral:#F26A4B; --dorado:#E8B04B; --mar:#0E7C9B;
+  --blanco:#FFFFFF; --tinta:#0F1A16; --tinta-2:#41504A; --gris:#8A968F;
+  --crema:#FAF8F3; --linea:#E4E0D6;
+  --font-display:'Fraunces',Georgia,serif;
+  --font-body:'Manrope',system-ui,sans-serif;
+  --fs-300:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --fs-400:clamp(0.95rem,0.9rem + 0.2vw,1.0625rem);
+  --fs-500:clamp(1.125rem,1.05rem + 0.4vw,1.375rem);
+  --fs-600:clamp(1.5rem,1.3rem + 0.9vw,2.125rem);
+  --fs-700:clamp(2rem,1.6rem + 1.8vw,3rem);
+  --fs-800:clamp(2.75rem,2rem + 3.5vw,4.5rem);
+  --fs-900:clamp(3.25rem,2.3rem + 5vw,6rem);
+  --sp-1:0.5rem;--sp-2:1rem;--sp-3:1.5rem;--sp-4:2rem;--sp-5:3rem;--sp-6:4rem;--sp-7:6rem;--sp-8:8rem;
+  --container:1300px;--radius-sm:6px;--radius-md:14px;--radius-lg:26px;
+  --shadow-sm:0 2px 10px rgba(15,26,22,.06);--shadow-md:0 16px 40px rgba(15,26,22,.12);
+  --ease:cubic-bezier(.22,.8,.28,1);--dur:280ms;
+}
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{margin:0;font-family:var(--font-body);font-size:var(--fs-400);line-height:1.6;color:var(--tinta);background:var(--blanco);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+img,svg,video{max-width:100%;display:block;}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit;}
+a{color:var(--verde);text-decoration:none;transition:color var(--dur) var(--ease);}
+a:hover{color:var(--verde-900);}
+:focus-visible{outline:3px solid var(--dorado);outline-offset:3px;border-radius:var(--radius-sm);}
+.skip-link{position:absolute;top:-100px;left:var(--sp-2);background:var(--tinta);color:var(--blanco);padding:var(--sp-1) var(--sp-2);border-radius:var(--radius-sm);z-index:1000;transition:top var(--dur) var(--ease);}
+.skip-link:focus{top:var(--sp-2);color:var(--blanco);}
+.container{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:var(--sp-3);}
+h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:1.05;letter-spacing:-0.015em;color:var(--tinta);margin:0 0 var(--sp-3);}
+h1{font-size:var(--fs-900);}
+h2{font-size:var(--fs-800);}
+h3{font-size:var(--fs-600);}
+h4{font-family:var(--font-body);font-weight:700;font-size:var(--fs-500);margin:0 0 var(--sp-2);line-height:1.2;}
+p{margin:0 0 var(--sp-2);color:var(--tinta-2);max-width:64ch;font-size:var(--fs-400);}
+.eyebrow{display:inline-flex;align-items:center;gap:var(--sp-1);font-family:var(--font-body);font-size:var(--fs-300);font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--verde);margin-bottom:var(--sp-3);}
+.eyebrow::before{content:'';width:26px;height:2px;background:var(--verde);}
+
+/* Isotipo propio: ola + sol (evoca Miraflores, malecón y mar) */
+.iso{width:38px;height:38px;flex-shrink:0;}
+
+/* HEADER */
+.site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:saturate(180%) blur(16px);-webkit-backdrop-filter:saturate(180%) blur(16px);border-bottom:1px solid var(--linea);}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:var(--sp-3);padding:var(--sp-2) 0;}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700;color:var(--tinta);font-size:1.3rem;letter-spacing:-0.02em;cursor:pointer;}
+.brand .mf{color:var(--verde);}
+.nav-menu{display:flex;gap:var(--sp-1);list-style:none;margin:0;padding:0;align-items:center;}
+.nav-item{position:relative;}
+.nav-item>a{display:inline-flex;align-items:center;gap:6px;color:var(--tinta);font-weight:600;font-size:var(--fs-400);padding:10px 13px;border-radius:var(--radius-sm);transition:all var(--dur) var(--ease);}
+.nav-item>a:hover,.nav-item.is-current>a{color:var(--verde-900);background:var(--crema);}
+.nav-item.has-sub>a::after{content:'';width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);margin-top:-3px;opacity:.55;transition:transform var(--dur) var(--ease);}
+.nav-item.has-sub:hover>a::after,.nav-item.has-sub:focus-within>a::after{transform:rotate(225deg);margin-top:2px;}
+.submenu{position:absolute;top:100%;left:0;min-width:250px;background:var(--blanco);border:1px solid var(--linea);border-radius:var(--radius-md);box-shadow:var(--shadow-md);padding:var(--sp-1);list-style:none;margin:8px 0 0;opacity:0;visibility:hidden;transform:translateY(8px);transition:all var(--dur) var(--ease);z-index:50;}
+.nav-item.has-sub:hover .submenu,.nav-item.has-sub:focus-within .submenu{opacity:1;visibility:visible;transform:translateY(0);}
+.submenu a{display:block;padding:10px 13px;border-radius:var(--radius-sm);color:var(--tinta-2);font-size:var(--fs-400);font-weight:500;}
+.submenu a:hover{background:var(--crema);color:var(--verde-900);}
+.nav-actions{display:flex;align-items:center;gap:var(--sp-2);}
+.lang-toggle{display:inline-flex;align-items:center;background:var(--crema);border:1px solid var(--linea);border-radius:999px;padding:3px;font-weight:700;font-size:var(--fs-300);}
+.lang-toggle button{padding:6px 12px;border-radius:999px;color:var(--gris);transition:all var(--dur) var(--ease);}
+.lang-toggle button.active{background:var(--verde);color:var(--blanco);}
+.nav-cta{background:var(--coral);color:var(--blanco);padding:11px 20px;border-radius:999px;font-weight:700;font-size:var(--fs-300);white-space:nowrap;transition:all var(--dur) var(--ease);}
+.nav-cta:hover{background:var(--tinta);color:var(--blanco);transform:translateY(-1px);}
+.menu-toggle{display:none;width:44px;height:44px;border-radius:var(--radius-sm);align-items:center;justify-content:center;}
+.menu-toggle span{width:22px;height:2px;background:var(--tinta);position:relative;}
+.menu-toggle span::before,.menu-toggle span::after{content:'';position:absolute;left:0;width:22px;height:2px;background:var(--tinta);}
+.menu-toggle span::before{top:-7px;}.menu-toggle span::after{top:7px;}
+@media (max-width:1080px){
+  .menu-toggle{display:inline-flex;}
+  .nav-menu{display:none;}
+  .nav-menu.is-open{display:flex;flex-direction:column;align-items:stretch;position:absolute;top:100%;left:0;right:0;background:var(--blanco);padding:var(--sp-2);border-bottom:1px solid var(--linea);box-shadow:var(--shadow-md);gap:2px;max-height:80vh;overflow-y:auto;}
+  .nav-menu.is-open .submenu{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0;padding:0 0 0 var(--sp-3);min-width:0;margin:0;}
+  .nav-cta{display:none;}
+}
+
+/* PÁGINAS */
+.page{display:none;}
+.page.is-active{display:block;animation:fade .4s var(--ease);}
+@keyframes fade{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
+
+/* HERO HOME */
+.hero{position:relative;overflow:hidden;background:var(--verde-900);color:var(--blanco);padding:var(--sp-8) 0 var(--sp-7);isolation:isolate;}
+.hero::before{content:'';position:absolute;inset:0;z-index:-2;background:linear-gradient(160deg,var(--verde-900) 0%,var(--verde-700) 60%,var(--mar) 130%);}
+.hero::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:120px;z-index:-1;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'><path d='M0,40 C300,110 500,0 700,45 C900,90 1050,30 1200,55 L1200,120 L0,120 Z' fill='%23ffffff' fill-opacity='0.06'/></svg>");background-size:cover;pointer-events:none;}
+.hero h1{color:var(--blanco);max-width:16ch;margin-bottom:var(--sp-3);}
+.hero .eyebrow{color:var(--dorado);}
+.hero .eyebrow::before{background:var(--dorado);}
+.hero p.lead{color:rgba(255,255,255,.85);font-size:var(--fs-500);max-width:56ch;margin-bottom:var(--sp-4);}
+.hero-actions{display:flex;gap:var(--sp-2);flex-wrap:wrap;margin-bottom:var(--sp-6);}
+.hero-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:var(--sp-4);border-top:1px solid rgba(255,255,255,.16);padding-top:var(--sp-4);}
+.hero-metric .n{font-family:var(--font-display);font-weight:700;font-size:var(--fs-700);color:var(--dorado);line-height:1;display:block;}
+.hero-metric p{color:rgba(255,255,255,.72);font-size:var(--fs-300);margin:var(--sp-1) 0 0;}
+
+/* HERO INTERIOR */
+.page-hero{position:relative;overflow:hidden;background:var(--verde-900);color:var(--blanco);padding:var(--sp-7) 0 var(--sp-6);}
+.page-hero::before{content:'';position:absolute;inset:0;z-index:0;background:linear-gradient(160deg,var(--verde-900),var(--verde-700));}
+.page-hero.coral::before{background:linear-gradient(160deg,#8f2f1f,var(--coral));}
+.page-hero.mar::before{background:linear-gradient(160deg,#083f52,var(--mar));}
+.page-hero>.container{position:relative;z-index:1;}
+.page-hero h1{color:var(--blanco);font-size:var(--fs-800);max-width:18ch;}
+.page-hero .eyebrow{color:var(--dorado);}
+.page-hero .eyebrow::before{background:var(--dorado);}
+.page-hero p{color:rgba(255,255,255,.85);max-width:60ch;font-size:var(--fs-500);}
+
+/* BOTONES */
+.btn{display:inline-flex;align-items:center;gap:var(--sp-1);padding:15px 30px;border-radius:999px;font-family:var(--font-body);font-weight:700;font-size:var(--fs-400);transition:all var(--dur) var(--ease);cursor:pointer;border:2px solid transparent;}
+.btn-primary{background:var(--coral);color:var(--blanco);}
+.btn-primary:hover{background:var(--blanco);color:var(--tinta);transform:translateY(-2px);box-shadow:var(--shadow-md);}
+.btn-ghost{background:transparent;color:var(--blanco);border-color:rgba(255,255,255,.4);}
+.btn-ghost:hover{background:rgba(255,255,255,.12);border-color:var(--blanco);color:var(--blanco);}
+.btn-dark{background:var(--verde);color:var(--blanco);}
+.btn-dark:hover{background:var(--verde-900);color:var(--blanco);transform:translateY(-2px);}
+
+section{padding:var(--sp-7) 0;}
+.section-head{max-width:760px;margin-bottom:var(--sp-4);}
+.bg-crema{background:var(--crema);}
+.bg-verde{background:var(--verde-900);color:var(--blanco);}
+.bg-verde h2,.bg-verde h3{color:var(--blanco);}
+.bg-verde p{color:rgba(255,255,255,.78);}
+.bg-verde .eyebrow{color:var(--dorado);}
+.bg-verde .eyebrow::before{background:var(--dorado);}
+
+/* Cinta métricas */
+.band{background:var(--coral);color:var(--blanco);padding:var(--sp-3) 0;overflow:hidden;}
+.band-track{display:flex;gap:var(--sp-5);white-space:nowrap;animation:mq 42s linear infinite;font-family:var(--font-display);font-weight:600;font-size:var(--fs-500);}
+.band-track span{display:inline-flex;align-items:center;gap:var(--sp-5);}
+.band-track span::after{content:'✦';opacity:.6;}
+@keyframes mq{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+.band:hover .band-track{animation-play-state:paused;}
+@media (prefers-reduced-motion:reduce){.band-track{animation:none;flex-wrap:wrap;white-space:normal;}}
+
+/* Grid tarjetas */
+.grid-auto{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--sp-3);margin-top:var(--sp-4);}
+.card{padding:var(--sp-4);border:1px solid var(--linea);border-radius:var(--radius-md);background:var(--blanco);transition:all var(--dur) var(--ease);position:relative;overflow:hidden;}
+.card::before{content:'';position:absolute;top:0;left:0;width:100%;height:4px;background:var(--cc,var(--verde));transform:scaleX(0);transform-origin:left;transition:transform var(--dur) var(--ease);}
+.card:hover{border-color:var(--cc,var(--verde));transform:translateY(-4px);box-shadow:var(--shadow-md);}
+.card:hover::before{transform:scaleX(1);}
+.card .ic{width:50px;height:50px;border-radius:var(--radius-sm);background:var(--verde-900);color:var(--dorado);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:var(--fs-500);margin-bottom:var(--sp-3);}
+.card h4{margin-bottom:var(--sp-1);}
+.card p{margin:0;font-size:var(--fs-400);}
+.card .more{display:inline-block;margin-top:var(--sp-2);font-weight:700;color:var(--verde);font-size:var(--fs-300);}
+.card:nth-child(4n+1){--cc:var(--verde);}
+.card:nth-child(4n+2){--cc:var(--coral);}
+.card:nth-child(4n+3){--cc:var(--mar);}
+.card:nth-child(4n+4){--cc:var(--dorado);}
+
+/* Sectores (grid con número) */
+.sectores{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--sp-2);margin-top:var(--sp-4);}
+.sector{padding:var(--sp-4);border-radius:var(--radius-md);background:var(--blanco);border:1px solid var(--linea);transition:all var(--dur) var(--ease);}
+.sector:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--verde);}
+.sector h4{color:var(--verde-900);}
+.sector p{font-size:var(--fs-300);margin:0;}
+
+/* Pasos */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--sp-3);margin-top:var(--sp-4);counter-reset:s;}
+.step{padding:var(--sp-4) var(--sp-3);counter-increment:s;border-top:3px solid var(--coral);}
+.step::before{content:counter(s,decimal-leading-zero);font-family:var(--font-display);font-size:var(--fs-700);color:var(--coral);display:block;line-height:1;margin-bottom:var(--sp-2);}
+.bg-verde .step{border-top-color:var(--dorado);}
+.bg-verde .step::before{color:var(--dorado);}
+
+/* Testimonios */
+.testis{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:var(--sp-3);margin-top:var(--sp-4);}
+.testi{padding:var(--sp-4);background:var(--blanco);border:1px solid var(--linea);border-radius:var(--radius-md);}
+.testi .quote{font-family:var(--font-display);font-size:var(--fs-500);color:var(--tinta);line-height:1.35;margin-bottom:var(--sp-3);}
+.testi .who{display:flex;align-items:center;gap:var(--sp-2);}
+.testi .av{width:44px;height:44px;border-radius:50%;background:var(--verde);color:var(--blanco);display:flex;align-items:center;justify-content:center;font-weight:700;font-family:var(--font-display);}
+.testi .who b{display:block;font-size:var(--fs-400);color:var(--tinta);}
+.testi .who span{font-size:var(--fs-300);color:var(--gris);}
+
+/* Noticias */
+.stories{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--sp-3);margin-top:var(--sp-4);}
+.story{background:var(--blanco);border:1px solid var(--linea);border-radius:var(--radius-md);overflow:hidden;display:flex;flex-direction:column;transition:all var(--dur) var(--ease);}
+.story:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);}
+.story-img{aspect-ratio:16/9;background:linear-gradient(135deg,var(--verde),var(--mar));}
+.story:nth-child(3n+2) .story-img{background:linear-gradient(135deg,var(--coral),var(--dorado));}
+.story:nth-child(3n+3) .story-img{background:linear-gradient(135deg,var(--mar),var(--verde-700));}
+.story-body{padding:var(--sp-3);flex:1;}
+.story-body .date{font-weight:700;font-size:var(--fs-300);color:var(--coral);text-transform:uppercase;letter-spacing:.05em;}
+.story-body h4{font-size:var(--fs-400);margin:var(--sp-1) 0 0;line-height:1.3;}
+
+/* Eventos */
+.eventos{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--sp-3);margin-top:var(--sp-4);}
+.evento{display:flex;gap:var(--sp-3);padding:var(--sp-3);border:1px solid var(--linea);border-radius:var(--radius-md);background:var(--blanco);transition:all var(--dur) var(--ease);}
+.evento:hover{border-color:var(--verde);box-shadow:var(--shadow-md);transform:translateY(-2px);}
+.evento .fecha{flex-shrink:0;width:64px;text-align:center;background:var(--verde-900);color:var(--blanco);border-radius:var(--radius-sm);padding:var(--sp-2) 0;font-family:var(--font-display);}
+.evento .fecha .d{font-size:var(--fs-600);font-weight:700;line-height:1;color:var(--dorado);}
+.evento .fecha .m{font-size:var(--fs-300);text-transform:uppercase;}
+.evento h4{font-size:var(--fs-400);margin:0 0 4px;}
+.evento p{font-size:var(--fs-300);margin:0;color:var(--gris);}
+
+/* Propuesta valor listas */
+.prop-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-5);margin-top:var(--sp-4);}
+.prop-list{list-style:none;padding:0;margin:0;}
+.prop-list li{padding:var(--sp-2) 0;border-bottom:1px solid var(--linea);display:flex;gap:var(--sp-2);align-items:flex-start;font-size:var(--fs-400);color:var(--tinta);}
+.prop-list li::before{content:'→';color:var(--verde);font-weight:700;flex-shrink:0;}
+@media (max-width:760px){.prop-grid{grid-template-columns:1fr;gap:var(--sp-3);}}
+
+/* Mapa */
+.mapwrap{margin-top:var(--sp-4);border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--linea);min-height:380px;}
+.mapwrap iframe{width:100%;height:100%;min-height:380px;border:0;display:block;}
+
+/* CTA */
+.cta{padding:var(--sp-8) 0;background:var(--dorado);color:var(--tinta);text-align:center;}
+.cta h2{color:var(--tinta);max-width:20ch;margin-inline:auto;}
+.cta p{color:var(--tinta);opacity:.85;font-size:var(--fs-500);margin:0 auto var(--sp-4);max-width:50ch;}
+
+/* Formulario */
+.form{max-width:640px;margin-top:var(--sp-4);display:grid;gap:var(--sp-2);}
+.form label{font-weight:600;font-size:var(--fs-300);text-transform:uppercase;letter-spacing:.05em;color:var(--tinta-2);}
+.form input,.form textarea,.form select{width:100%;padding:12px 14px;border:1px solid var(--linea);border-radius:var(--radius-sm);font:inherit;color:var(--tinta);background:var(--blanco);}
+.form input:focus,.form textarea:focus,.form select:focus{border-color:var(--verde);outline:none;}
+.form .field{display:grid;gap:6px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-2);}
+@media (max-width:600px){.form-row{grid-template-columns:1fr;}}
+
+/* FOOTER */
+.site-footer{background:var(--verde-900);color:rgba(255,255,255,.72);padding:var(--sp-6) 0 var(--sp-3);font-size:var(--fs-300);}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:var(--sp-4);margin-bottom:var(--sp-4);}
+.site-footer h5{color:var(--blanco);font-family:var(--font-body);text-transform:uppercase;letter-spacing:.1em;font-size:var(--fs-300);margin:0 0 var(--sp-2);}
+.site-footer ul{list-style:none;padding:0;margin:0;}
+.site-footer li{margin-bottom:var(--sp-1);}
+.site-footer a{color:rgba(255,255,255,.72);cursor:pointer;}
+.site-footer a:hover{color:var(--dorado);}
+.footer-brand{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700;font-size:var(--fs-500);color:var(--blanco);margin-bottom:var(--sp-2);}
+.footer-bottom{padding-top:var(--sp-3);border-top:1px solid rgba(255,255,255,.15);display:flex;justify-content:space-between;flex-wrap:wrap;gap:var(--sp-2);}
+@media (max-width:860px){.footer-grid{grid-template-columns:1fr 1fr;}}
+@media (max-width:540px){.footer-grid{grid-template-columns:1fr;}}
+
+.reveal{opacity:0;transform:translateY(20px);transition:opacity 600ms var(--ease),transform 600ms var(--ease);}
+.reveal.is-visible{opacity:1;transform:none;}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}html{scroll-behavior:auto;}}
+.lead-narrow{max-width:680px;}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+<!-- SVG isotipo reutilizable (ola + sol) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="iso-mf" viewBox="0 0 100 100"><circle cx="50" cy="34" r="16" fill="var(--dorado)"/><path d="M6,64 Q28,48 50,64 T94,64" fill="none" stroke="var(--verde)" stroke-width="7" stroke-linecap="round"/><path d="M6,80 Q28,64 50,80 T94,80" fill="none" stroke="var(--mar)" stroke-width="7" stroke-linecap="round"/></symbol></svg>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" data-go="inicio" aria-label="Invest Miraflores">
+      <svg class="iso" aria-hidden="true"><use href="#iso-mf"/></svg>
+      Invest <span class="mf">Miraflores</span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a data-go="inicio" data-i18n="nav_home">Inicio</a></li>
+        <li class="nav-item"><a data-go="nosotros" data-i18n="nav_about">Nosotros</a></li>
+        <li class="nav-item has-sub"><a data-go="invertir" data-i18n="nav_invest">Invierta en Miraflores</a>
+          <ul class="submenu">
+            <li><a data-go="invertir" data-anchor="porque" data-i18n="nav_why">Por qué Miraflores</a></li>
+            <li><a data-go="invertir" data-anchor="sectores" data-i18n="nav_sectors">Sectores estratégicos</a></li>
+            <li><a data-go="invertir" data-anchor="servicios" data-i18n="nav_services">Servicios al inversionista</a></li>
+            <li><a data-go="invertir" data-anchor="como" data-i18n="nav_how">Cómo invertir</a></li>
+          </ul></li>
+        <li class="nav-item has-sub"><a data-go="cooperacion" data-i18n="nav_coop">Cooperación</a>
+          <ul class="submenu">
+            <li><a data-go="cooperacion" data-anchor="lineas" data-i18n="nav_lines">Líneas de cooperación</a></li>
+            <li><a data-go="cooperacion" data-anchor="redes" data-i18n="nav_networks">Redes internacionales</a></li>
+          </ul></li>
+        <li class="nav-item"><a data-go="noticias" data-i18n="nav_news">Noticias</a></li>
+        <li class="nav-item"><a data-go="contacto" data-i18n="nav_contact">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <div class="lang-toggle" role="group" aria-label="Idioma"><button data-lang-btn="es" class="active" aria-pressed="true">ES</button><button data-lang-btn="en" aria-pressed="false">EN</button></div>
+      <a class="nav-cta" data-go="contacto" data-i18n="nav_cta">Invierte aquí</a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============================ INICIO ============================ -->
+<div class="page is-active" id="page-inicio">
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow" data-i18n="h_eyebrow">Miraflores · Lima · Perú</span>
+      <h1 data-i18n="h_title">Miraflores, donde la inversión encuentra su lugar.</h1>
+      <p class="lead" data-i18n="h_lead">Somos la agencia que conecta a Miraflores con el mundo, a través de inversión, cooperación y alianzas estratégicas que generan desarrollo y bienestar para el distrito.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" data-go="invertir" data-i18n="h_cta1">Invierta en Miraflores</a>
+        <a class="btn btn-ghost" data-go="cooperacion" data-i18n="h_cta2">Coopere con Miraflores</a>
+      </div>
+      <div class="hero-metrics">
+        <div class="hero-metric"><span class="n">128</span><p data-i18n="h_m1">proyectos de inversión acompañados</p></div>
+        <div class="hero-metric"><span class="n">USD 340M</span><p data-i18n="h_m2">en inversión facilitada</p></div>
+        <div class="hero-metric"><span class="n">24</span><p data-i18n="h_m3">alianzas internacionales activas</p></div>
+        <div class="hero-metric"><span class="n">3.500+</span><p data-i18n="h_m4">empleos generados</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band" aria-label="Sectores">
+    <div class="band-track" aria-hidden="true">
+      <span data-i18n="b1">Turismo</span><span data-i18n="b2">Gastronomía</span><span data-i18n="b3">Tecnología</span><span data-i18n="b4">Servicios</span><span data-i18n="b5">Inmobiliario</span><span data-i18n="b6">Economía creativa</span>
+      <span data-i18n="b1b">Turismo</span><span data-i18n="b2b">Gastronomía</span><span data-i18n="b3b">Tecnología</span><span data-i18n="b4b">Servicios</span><span data-i18n="b5b">Inmobiliario</span><span data-i18n="b6b">Economía creativa</span>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="cn_eyebrow">Miraflores se conecta con el mundo</span>
+        <h2 data-i18n="cn_title">Alianzas que se traducen en oportunidades.</h2>
+        <p data-i18n="cn_lead">Impulsamos vínculos que conectan al distrito con gobiernos, empresas, organismos multilaterales y redes internacionales para generar desarrollo con impacto real. A través de la inversión, la cooperación y el relacionamiento estratégico, estas conexiones se traducen en oportunidades, conocimiento e infraestructura para la ciudadanía.</p>
+      </div>
+      <div class="grid-auto">
+        <article class="card reveal"><div class="ic">01</div><h4 data-i18n="cn_1_t">Inversión</h4><p data-i18n="cn_1_d">Acompañamos a empresas nacionales e internacionales que quieren establecerse o crecer en Miraflores.</p><span class="more" data-go="invertir" style="cursor:pointer;" data-i18n="cn_more">Ampliar →</span></article>
+        <article class="card reveal"><div class="ic">02</div><h4 data-i18n="cn_2_t">Cooperación</h4><p data-i18n="cn_2_d">Gestionamos cooperación internacional para proyectos de alto impacto en el distrito.</p><span class="more" data-go="cooperacion" style="cursor:pointer;" data-i18n="cn_more2">Ampliar →</span></article>
+        <article class="card reveal"><div class="ic">03</div><h4 data-i18n="cn_3_t">Relacionamiento</h4><p data-i18n="cn_3_d">Conectamos a Miraflores con redes globales de ciudades e inversión.</p><span class="more" data-go="cooperacion" data-anchor="redes" style="cursor:pointer;" data-i18n="cn_more3">Ampliar →</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-crema">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="hw_eyebrow">Cómo invertir</span>
+        <h2 data-i18n="hw_title">Tu inversión en Miraflores, paso a paso.</h2>
+      </div>
+      <div class="steps reveal">
+        <article class="step"><h4 data-i18n="hw_1_t">Contáctanos</h4><p data-i18n="hw_1_d">Cuéntanos tu proyecto y qué buscas en el distrito.</p></article>
+        <article class="step"><h4 data-i18n="hw_2_t">Diagnóstico</h4><p data-i18n="hw_2_d">Analizamos oportunidades, incentivos y ubicación.</p></article>
+        <article class="step"><h4 data-i18n="hw_3_t">Acompañamiento</h4><p data-i18n="hw_3_d">Te guiamos en trámites, permisos y aliados locales.</p></article>
+        <article class="step"><h4 data-i18n="hw_4_t">Aterrizaje</h4><p data-i18n="hw_4_d">Tu inversión se materializa y hacemos seguimiento.</p></article>
+      </div>
+      <div style="margin-top:2rem;"><a class="btn btn-dark" data-go="invertir" data-anchor="como" data-i18n="hw_cta">Conoce el proceso →</a></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="tt_eyebrow">Testimonios</span>
+        <h2 data-i18n="tt_title">Lo que dicen quienes ya apostaron por Miraflores.</h2>
+        <p style="color:var(--gris);font-size:var(--fs-300);" data-i18n="tt_note">Testimonios ilustrativos, por reemplazar con casos reales.</p>
+      </div>
+      <div class="testis">
+        <article class="testi reveal"><p class="quote" data-i18n="tt_1_q">"Miraflores combina calidad de vida, seguridad y un ecosistema empresarial que no encontramos en otro distrito de Lima."</p><div class="who"><span class="av">·</span><div><b data-i18n="tt_1_n">Andrea Salcedo</b><span data-i18n="tt_1_r">Gerenta General, Grupo Hotelero Pacífico</span></div></div></article>
+        <article class="testi reveal"><p class="quote" data-i18n="tt_2_q">"El acompañamiento de la agencia hizo que instalar nuestras oficinas fuera simple y rápido."</p><div class="who"><span class="av">·</span><div><b data-i18n="tt_2_n">Martín Escobedo</b><span data-i18n="tt_2_r">Director de Expansión, TechLatam</span></div></div></article>
+        <article class="testi reveal"><p class="quote" data-i18n="tt_3_q">"Apostar por Miraflores fue apostar por el corazón turístico y económico de Lima."</p><div class="who"><span class="av">·</span><div><b data-i18n="tt_3_n">Carla Ferreyros</b><span data-i18n="tt_3_r">Fundadora, Distrito Gastronómico</span></div></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container reveal">
+      <h2 data-i18n="c_title">¿Listo para invertir en Miraflores?</h2>
+      <p data-i18n="c_p">Conversemos sobre tu proyecto. Te acompañamos en cada paso.</p>
+      <a class="btn btn-primary" data-go="contacto" data-i18n="c_btn">Contáctanos →</a>
+    </div>
+  </section>
+</div>
+
+<!-- ============================ NOSOTROS ============================ -->
+<div class="page" id="page-nosotros">
+  <section class="page-hero"><div class="container"><span class="eyebrow" data-i18n="ns_eyebrow">Nosotros</span><h1 data-i18n="ns_title">La agencia que abre Miraflores al mundo.</h1><p data-i18n="ns_lead">Somos la agencia de inversión y cooperación del distrito de Miraflores: un puente entre el territorio y las oportunidades globales.</p></div></section>
+  <section><div class="container"><div class="prop-grid">
+    <div class="reveal"><span class="eyebrow" data-i18n="ns_mv_e">Misión y visión</span><h2 style="font-size:var(--fs-600);" data-i18n="ns_mis_t">Nuestra misión</h2><p data-i18n="ns_mis_d">Atraer inversión de calidad y gestionar cooperación internacional que impulse el desarrollo económico, social y sostenible de Miraflores, posicionando al distrito como referente de competitividad en el Perú y la región.</p><h2 style="font-size:var(--fs-600);margin-top:2rem;" data-i18n="ns_vis_t">Nuestra visión</h2><p data-i18n="ns_vis_d">Ser la agencia de inversión distrital líder de América Latina, reconocida por conectar a Miraflores con los flujos globales de capital, talento y conocimiento.</p></div>
+    <div class="reveal"><span class="eyebrow" data-i18n="ns_val_e">Valores</span><h2 style="font-size:var(--fs-600);" data-i18n="ns_val_t">Cómo trabajamos</h2><ul class="prop-list">
+      <li data-i18n="ns_v1">Transparencia y probidad en cada gestión.</li>
+      <li data-i18n="ns_v2">Orientación a resultados con impacto medible.</li>
+      <li data-i18n="ns_v3">Colaboración público-privada.</li>
+      <li data-i18n="ns_v4">Vocación de servicio al inversionista y al ciudadano.</li>
+      <li data-i18n="ns_v5">Sostenibilidad como criterio transversal.</li>
+    </ul></div>
+  </div></div></section>
+  <section class="bg-verde"><div class="container"><div class="section-head reveal"><span class="eyebrow" data-i18n="ns_eq_e">Gobernanza</span><h2 data-i18n="ns_eq_t">Una agencia con respaldo institucional.</h2><p class="lead-narrow" data-i18n="ns_eq_d">La agencia articula al gobierno distrital, el sector privado y los aliados internacionales bajo un modelo de gobernanza mixta. Esta sección se completará con el directorio y el equipo definitivo.</p></div><div class="grid-auto">
+    <article class="card reveal" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.14);"><h4 style="color:#fff;" data-i18n="ns_eq_1t">Directorio</h4><p style="color:rgba(255,255,255,.72);" data-i18n="ns_eq_1d">Presidido por la Alcaldía de Miraflores, con representación de la Cámara de Comercio, gremios de turismo y gastronomía, y dos directores independientes.</p></article>
+    <article class="card reveal" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.14);"><h4 style="color:#fff;" data-i18n="ns_eq_2t">Dirección ejecutiva</h4><p style="color:rgba(255,255,255,.72);" data-i18n="ns_eq_2d">Un equipo ejecutivo de 8 profesionales en atracción de inversión, cooperación internacional, estudios y comunicaciones.</p></article>
+    <article class="card reveal" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.14);"><h4 style="color:#fff;" data-i18n="ns_eq_3t">Aliados</h4><p style="color:rgba(255,255,255,.72);" data-i18n="ns_eq_3d">Cámara de Comercio de Lima, PromPerú, ProInversión, universidades locales y agencias de cooperación internacional.</p></article>
+  </div></div></section>
+</div>
+
+<!-- ============================ INVERTIR ============================ -->
+<div class="page" id="page-invertir">
+  <section class="page-hero coral"><div class="container"><span class="eyebrow" data-i18n="iv_eyebrow">Invierta en Miraflores</span><h1 data-i18n="iv_title">El mejor lugar del Perú para tu próxima inversión.</h1><p data-i18n="iv_lead">Miraflores concentra calidad de vida, seguridad, turismo y un ecosistema empresarial único en Lima.</p></div></section>
+  <section id="porque"><div class="container"><div class="section-head reveal"><span class="eyebrow" data-i18n="iv_w_e">Por qué Miraflores</span><h2 data-i18n="iv_w_t">Razones para invertir aquí.</h2></div><div class="grid-auto">
+    <article class="card reveal"><div class="ic">✦</div><h4 data-i18n="iv_w_1t">Ubicación estratégica</h4><p data-i18n="iv_w_1d">Corazón turístico y de negocios de Lima, frente al Pacífico y con conectividad total.</p></article>
+    <article class="card reveal"><div class="ic">✦</div><h4 data-i18n="iv_w_2t">Calidad de vida</h4><p data-i18n="iv_w_2d">Malecones, parques, cultura y servicios que atraen talento y residentes.</p></article>
+    <article class="card reveal"><div class="ic">✦</div><h4 data-i18n="iv_w_3t">Seguridad y gestión</h4><p data-i18n="iv_w_3d">Uno de los distritos mejor gestionados del país, con institucionalidad sólida.</p></article>
+    <article class="card reveal"><div class="ic">✦</div><h4 data-i18n="iv_w_4t">Ecosistema empresarial</h4><p data-i18n="iv_w_4d">Alta concentración de empresas, comercio, gastronomía y servicios financieros.</p></article>
+  </div></div></section>
+  <section class="bg-crema" id="sectores"><div class="container"><div class="section-head reveal"><span class="eyebrow" data-i18n="iv_s_e">Sectores estratégicos</span><h2 data-i18n="iv_s_t">Dónde están las oportunidades.</h2></div><div class="sectores reveal">
+    <article class="sector"><h4 data-i18n="iv_s_1t">Turismo y hotelería</h4><p data-i18n="iv_s_1d">Epicentro del turismo limeño, con demanda constante de alojamiento y experiencias.</p></article>
+    <article class="sector"><h4 data-i18n="iv_s_2t">Gastronomía</h4><p data-i18n="iv_s_2d">Capital gastronómica: restaurantes de clase mundial y una escena en expansión.</p></article>
+    <article class="sector"><h4 data-i18n="iv_s_3t">Tecnología y servicios</h4><p data-i18n="iv_s_3d">Oficinas, coworking y empresas de servicios que buscan talento y ubicación.</p></article>
+    <article class="sector"><h4 data-i18n="iv_s_4t">Inmobiliario</h4><p data-i18n="iv_s_4d">Desarrollo residencial y comercial de alto valor con demanda sostenida.</p></article>
+    <article class="sector"><h4 data-i18n="iv_s_5t">Economía creativa</h4><p data-i18n="iv_s_5d">Cultura, diseño, entretenimiento y economía nocturna con identidad propia.</p></article>
+    <article class="sector"><h4 data-i18n="iv_s_6t">Retail y comercio</h4><p data-i18n="iv_s_6d">Comercio de alto tránsito y experiencias de consumo premium.</p></article>
+  </div></div></section>
+  <section id="servicios"><div class="container"><div class="section-head reveal"><span class="eyebrow" data-i18n="iv_sv_e">Servicios al inversionista</span><h2 data-i18n="iv_sv_t">Te acompañamos, gratis y en cada etapa.</h2></div><div class="grid-auto">
+    <article class="card reveal"><div class="ic">01</div><h4 data-i18n="iv_sv_1t">Información estratégica</h4><p data-i18n="iv_sv_1d">Datos, estudios y cifras del distrito para tomar decisiones informadas.</p></article>
+    <article class="card reveal"><div class="ic">02</div><h4 data-i18n="iv_sv_2t">Facilitación de trámites</h4><p data-i18n="iv_sv_2d">Orientación en licencias, permisos y normativa municipal.</p></article>
+    <article class="card reveal"><div class="ic">03</div><h4 data-i18n="iv_sv_3t">Conexión con aliados</h4><p data-i18n="iv_sv_3d">Te vinculamos con actores clave del ecosistema local.</p></article>
+    <article class="card reveal"><div class="ic">04</div><h4 data-i18n="iv_sv_4t">Aftercare</h4><p data-i18n="iv_sv_4d">Seguimiento posterior para que tu inversión crezca y se quede.</p></article>
+  </div></div></section>
+  <section class="bg-verde" id="como"><div class="container"><div class="section-head reveal"><span class="eyebrow" data-i18n="iv_h_e">Cómo invertir</span><h2 data-i18n="iv_h_t">Un proceso claro y acompañado.</h2></div><div class="steps reveal">
+    <article class="step"><h4 style="color:#fff;" data-i18n="iv_h_1t">Contacto</h4><p style="color:rgba(255,255,255,.72);" data-i18n="iv_h_1d">Nos escribes y agendamos una primera reunión.</p></article>
+    <article class="step"><h4 style="color:#fff;" data-i18n="iv_h_2t">Diagnóstico</h4><p style="color:rgba(255,255,255,.72);" data-i18n="iv_h_2d">Evaluamos tu proyecto y las oportunidades del distrito.</p></article>
+    <article class="step"><h4 style="color:#fff;" data-i18n="iv_h_3t">Plan</h4><p style="color:rgba(255,255,255,.72);" data-i18n="iv_h_3d">Diseñamos una hoja de ruta con hitos y aliados.</p></article>
+    <article class="step"><h4 style="color:#fff;" data-i18n="iv_h_4t">Ejecución</h4><p style="color:rgba(255,255,255,.72);" data-i18n="iv_h_4d">Acompañamos la instalación y el crecimiento.</p></article>
+  </div><div style="margin-top:2rem;"><a class="btn btn-primary" data-go="contacto" data-i18n="iv_h_cta">Iniciar mi inversión →</a></div></div></section>
+</div>
+
+<!-- ============================ COOPERACIÓN ============================ -->
+<div class="page" id="page-cooperacion">
+  <section class="page-hero mar"><div class="container"><span class="eyebrow" data-i18n="co_eyebrow">Cooperación internacional</span><h1 data-i18n="co_title">Aliados globales para un distrito local.</h1><p data-i18n="co_lead">Gestionamos cooperación internacional que fortalece las capacidades del distrito y mejora la vida de sus vecinos.</p></div></section>
+  <section id="lineas"><div class="container"><div class="section-head reveal"><span class="eyebrow" data-i18n="co_l_e">Líneas de cooperación</span><h2 data-i18n="co_l_t">Dónde enfocamos las alianzas.</h2></div><div class="grid-auto">
+    <article class="card reveal"><div class="ic">01</div><h4 data-i18n="co_l_1t">Desarrollo económico</h4><p data-i18n="co_l_1d">Emprendimiento, empleo y fortalecimiento del tejido productivo local.</p></article>
+    <article class="card reveal"><div class="ic">02</div><h4 data-i18n="co_l_2t">Sostenibilidad urbana</h4><p data-i18n="co_l_2d">Movilidad limpia, espacios públicos y resiliencia climática.</p></article>
+    <article class="card reveal"><div class="ic">03</div><h4 data-i18n="co_l_3t">Cultura y turismo</h4><p data-i18n="co_l_3d">Cooperación para la identidad, el patrimonio y la economía creativa.</p></article>
+    <article class="card reveal"><div class="ic">04</div><h4 data-i18n="co_l_4t">Innovación y gobierno</h4><p data-i18n="co_l_4d">Modernización, GovTech y mejora de servicios al ciudadano.</p></article>
+  </div></div></section>
+  <section class="bg-crema" id="redes"><div class="container"><div class="section-head reveal"><span class="eyebrow" data-i18n="co_r_e">Redes internacionales</span><h2 data-i18n="co_r_t">Miraflores en el mapa global.</h2><p class="lead-narrow" data-i18n="co_r_d">Participamos en redes de ciudades y plataformas de cooperación que conectan al distrito con buenas prácticas de todo el mundo. Esta sección se completará con las redes y hermanamientos definitivos.</p></div><div class="grid-auto reveal">
+    <article class="card"><h4 data-i18n="co_r_1t">Redes de ciudades</h4><p data-i18n="co_r_1d">Miembro de redes iberoamericanas de ciudades y de plataformas de gobiernos locales por la innovación y el turismo sostenible.</p></article>
+    <article class="card"><h4 data-i18n="co_r_2t">Hermanamientos</h4><p data-i18n="co_r_2d">Acuerdos de hermanamiento con distritos turísticos y costeros de la región, orientados a intercambio de buenas prácticas.</p></article>
+    <article class="card"><h4 data-i18n="co_r_3t">Organismos aliados</h4><p data-i18n="co_r_3d">Colaboración con organismos multilaterales y agencias de cooperación en desarrollo urbano, cultura y sostenibilidad.</p></article>
+  </div></div></section>
+</div>
+
+<!-- ============================ NOTICIAS ============================ -->
+<div class="page" id="page-noticias">
+  <section class="page-hero"><div class="container"><span class="eyebrow" data-i18n="no_eyebrow">Noticias</span><h1 data-i18n="no_title">Lo que pasa en Miraflores.</h1><p data-i18n="no_lead">Novedades de inversión, cooperación y eventos del distrito.</p></div></section>
+  <section><div class="container">
+    <div class="stories reveal">
+      <article class="story"><div class="story-img"></div><div class="story-body"><span class="date" data-i18n="no_soon">Próximamente</span><h4 data-i18n="no_1">Lanzamiento de la Agencia de Inversión de Miraflores</h4></div></article>
+      <article class="story"><div class="story-img"></div><div class="story-body"><span class="date" data-i18n="no_soon2">Próximamente</span><h4 data-i18n="no_2">Miraflores presenta su portafolio de oportunidades de inversión</h4></div></article>
+      <article class="story"><div class="story-img"></div><div class="story-body"><span class="date" data-i18n="no_soon3">Próximamente</span><h4 data-i18n="no_3">Nuevas alianzas de cooperación internacional para el distrito</h4></div></article>
+    </div>
+    <p style="margin-top:1.5rem;color:var(--gris);font-size:var(--fs-300);" data-i18n="no_note">Contenido ilustrativo. Se reemplazará con noticias reales al entrar en operación.</p>
+  </div></section>
+  <section class="bg-crema"><div class="container"><div class="section-head reveal"><span class="eyebrow" data-i18n="ev_e">Próximos eventos</span><h2 data-i18n="ev_t">Agenda del distrito.</h2></div><div class="eventos reveal">
+    <article class="evento"><div class="fecha"><div class="d">15</div><div class="m" data-i18n="ev_soon">Pronto</div></div><div><h4 data-i18n="ev_1t">Foro de Inversión Miraflores</h4><p data-i18n="ev_1d">Encuentro de empresarios e inversionistas · Por confirmar</p></div></article>
+    <article class="evento"><div class="fecha"><div class="d">06</div><div class="m" data-i18n="ev_soon2">Pronto</div></div><div><h4 data-i18n="ev_2t">Miraflores Summit de Cooperación</h4><p data-i18n="ev_2d">Aliados internacionales · Por confirmar</p></div></article>
+    <article class="evento"><div class="fecha"><div class="d">20</div><div class="m" data-i18n="ev_soon3">Pronto</div></div><div><h4 data-i18n="ev_3t">Ronda de negocios turismo y gastronomía</h4><p data-i18n="ev_3d">Sector privado · Por confirmar</p></div></article>
+  </div></div></section>
+</div>
+
+<!-- ============================ CONTACTO ============================ -->
+<div class="page" id="page-contacto">
+  <section class="page-hero"><div class="container"><span class="eyebrow" data-i18n="ct_eyebrow">Contacto</span><h1 data-i18n="ct_title">Hablemos de tu proyecto.</h1><p data-i18n="ct_lead">¿Quieres invertir, cooperar o saber más sobre Miraflores? Escríbenos.</p></div></section>
+  <section><div class="container"><div class="prop-grid" style="align-items:start;">
+    <div class="reveal"><span class="eyebrow" data-i18n="ct_f_e">Escríbenos</span><h2 style="font-size:var(--fs-600);" data-i18n="ct_f_t">Formulario</h2>
+      <form class="form" onsubmit="return false;">
+        <div class="form-row"><div class="field"><label for="nom" data-i18n="ct_nom">Nombre</label><input type="text" id="nom" /></div><div class="field"><label for="ema" data-i18n="ct_ema">Correo</label><input type="email" id="ema" /></div></div>
+        <div class="field"><label for="emp" data-i18n="ct_emp">Empresa / Institución</label><input type="text" id="emp" /></div>
+        <div class="field"><label for="mot" data-i18n="ct_mot">Motivo</label><select id="mot"><option data-i18n="ct_o1">Quiero invertir en Miraflores</option><option data-i18n="ct_o2">Propuesta de cooperación</option><option data-i18n="ct_o3">Prensa</option><option data-i18n="ct_o4">Otro</option></select></div>
+        <div class="field"><label for="msg" data-i18n="ct_msg">Mensaje</label><textarea id="msg" rows="5"></textarea></div>
+        <button class="btn btn-primary" type="submit" data-i18n="ct_send">Enviar →</button>
+      </form>
+      <p style="color:var(--gris);font-size:var(--fs-300);margin-top:1rem;" data-i18n="ct_note">El formulario quedará operativo al conectarlo a un servicio como Formspree o Brevo.</p>
+    </div>
+    <div class="reveal"><span class="eyebrow" data-i18n="ct_d_e">Datos</span><h2 style="font-size:var(--fs-600);" data-i18n="ct_d_t">Dónde estamos</h2>
+      <p style="font-family:var(--font-display);font-size:var(--fs-500);color:var(--tinta);margin-bottom:4px;" data-i18n="ct_d_dir">Miraflores, Lima, Perú</p>
+      <p data-i18n="ct_d_addr">Av. Larco 400, Miraflores, Lima 15074</p>
+      <p style="font-family:var(--font-display);font-size:var(--fs-500);color:var(--tinta);margin:var(--sp-3) 0 4px;" data-i18n="ct_d_mail">Correo</p>
+      <p><a href="mailto:contacto@investmiraflores.pe">contacto@investmiraflores.pe</a></p>
+      <div class="mapwrap" style="margin-top:var(--sp-3);"><iframe title="Mapa de Miraflores, Lima" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Miraflores,+Lima,+Per%C3%BA&output=embed"></iframe></div>
+    </div>
+  </div></div></section>
+</div>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><svg class="iso" style="width:30px;height:30px;" aria-hidden="true"><use href="#iso-mf"/></svg> Invest Miraflores</div>
+        <p style="color:rgba(255,255,255,.55);max-width:38ch;" data-i18n="ft_p">Agencia de inversión y cooperación del distrito de Miraflores. Conectamos el distrito con el mundo.</p>
+      </div>
+      <div><h5 data-i18n="ft_h1">Explora</h5><ul>
+        <li><a data-go="nosotros" data-i18n="nav_about">Nosotros</a></li>
+        <li><a data-go="invertir" data-i18n="nav_invest">Invierta en Miraflores</a></li>
+        <li><a data-go="cooperacion" data-i18n="nav_coop">Cooperación</a></li>
+        <li><a data-go="noticias" data-i18n="nav_news">Noticias</a></li>
+      </ul></div>
+      <div><h5 data-i18n="ft_h2">Inversión</h5><ul>
+        <li><a data-go="invertir" data-anchor="porque" data-i18n="nav_why">Por qué Miraflores</a></li>
+        <li><a data-go="invertir" data-anchor="sectores" data-i18n="nav_sectors">Sectores</a></li>
+        <li><a data-go="invertir" data-anchor="servicios" data-i18n="nav_services">Servicios</a></li>
+      </ul></div>
+      <div><h5 data-i18n="ft_h3">Contacto</h5><ul>
+        <li><a href="mailto:contacto@investmiraflores.pe">contacto@investmiraflores.pe</a></li>
+        <li data-i18n="ft_loc">Miraflores, Lima, Perú</li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom"><span data-i18n="ft_copy">© 2026 Invest Miraflores. Propuesta.</span><span data-i18n="ft_insp">Agencia de inversión distrital.</span></div>
+  </div>
+</footer>
+
+<script>
+const I18N={
+ es:{
+  skip:"Saltar al contenido",
+  nav_home:"Inicio",nav_about:"Nosotros",nav_invest:"Invierta en Miraflores",nav_why:"Por qué Miraflores",nav_sectors:"Sectores estratégicos",nav_services:"Servicios al inversionista",nav_how:"Cómo invertir",nav_coop:"Cooperación",nav_lines:"Líneas de cooperación",nav_networks:"Redes internacionales",nav_news:"Noticias",nav_contact:"Contacto",nav_cta:"Invierte aquí",
+  h_eyebrow:"Miraflores · Lima · Perú",h_title:"Miraflores, donde la inversión encuentra su lugar.",h_lead:"Somos la agencia que conecta a Miraflores con el mundo, a través de inversión, cooperación y alianzas estratégicas que generan desarrollo y bienestar para el distrito.",h_cta1:"Invierta en Miraflores",h_cta2:"Coopere con Miraflores",
+  h_m1:"proyectos de inversión acompañados",h_m2:"en inversión facilitada",h_m3:"alianzas internacionales activas",h_m4:"empleos generados",
+  b1:"Turismo",b2:"Gastronomía",b3:"Tecnología",b4:"Servicios",b5:"Inmobiliario",b6:"Economía creativa",b1b:"Turismo",b2b:"Gastronomía",b3b:"Tecnología",b4b:"Servicios",b5b:"Inmobiliario",b6b:"Economía creativa",
+  cn_eyebrow:"Miraflores se conecta con el mundo",cn_title:"Alianzas que se traducen en oportunidades.",cn_lead:"Impulsamos vínculos que conectan al distrito con gobiernos, empresas, organismos multilaterales y redes internacionales para generar desarrollo con impacto real. A través de la inversión, la cooperación y el relacionamiento estratégico, estas conexiones se traducen en oportunidades, conocimiento e infraestructura para la ciudadanía.",
+  cn_1_t:"Inversión",cn_1_d:"Acompañamos a empresas nacionales e internacionales que quieren establecerse o crecer en Miraflores.",cn_more:"Ampliar →",
+  cn_2_t:"Cooperación",cn_2_d:"Gestionamos cooperación internacional para proyectos de alto impacto en el distrito.",cn_more2:"Ampliar →",
+  cn_3_t:"Relacionamiento",cn_3_d:"Conectamos a Miraflores con redes globales de ciudades e inversión.",cn_more3:"Ampliar →",
+  hw_eyebrow:"Cómo invertir",hw_title:"Tu inversión en Miraflores, paso a paso.",hw_1_t:"Contáctanos",hw_1_d:"Cuéntanos tu proyecto y qué buscas en el distrito.",hw_2_t:"Diagnóstico",hw_2_d:"Analizamos oportunidades, incentivos y ubicación.",hw_3_t:"Acompañamiento",hw_3_d:"Te guiamos en trámites, permisos y aliados locales.",hw_4_t:"Aterrizaje",hw_4_d:"Tu inversión se materializa y hacemos seguimiento.",hw_cta:"Conoce el proceso →",
+  tt_eyebrow:"Testimonios",tt_title:"Lo que dicen quienes ya apostaron por Miraflores.",tt_note:"Testimonios de referencia para la maqueta. Reemplazar con casos reales antes de publicar.",tt_1_q:"\"Miraflores combina calidad de vida, seguridad y un ecosistema empresarial que no encontramos en otro distrito de Lima.\"",tt_1_n:"Andrea Salcedo",tt_1_r:"Gerenta General, Grupo Hotelero Pacífico",tt_2_q:"\"El acompañamiento de la agencia hizo que instalar nuestras oficinas fuera simple y rápido.\"",tt_2_n:"Martín Escobedo",tt_2_r:"Director de Expansión, TechLatam",tt_3_q:"\"Apostar por Miraflores fue apostar por el corazón turístico y económico de Lima.\"",tt_3_n:"Carla Ferreyros",tt_3_r:"Fundadora, Distrito Gastronómico",
+  c_title:"¿Listo para invertir en Miraflores?",c_p:"Conversemos sobre tu proyecto. Te acompañamos en cada paso.",c_btn:"Contáctanos →",
+  ns_eyebrow:"Nosotros",ns_title:"La agencia que abre Miraflores al mundo.",ns_lead:"Somos la agencia de inversión y cooperación del distrito de Miraflores: un puente entre el territorio y las oportunidades globales.",
+  ns_mv_e:"Misión y visión",ns_mis_t:"Nuestra misión",ns_mis_d:"Atraer inversión de calidad y gestionar cooperación internacional que impulse el desarrollo económico, social y sostenible de Miraflores, posicionando al distrito como referente de competitividad en el Perú y la región.",ns_vis_t:"Nuestra visión",ns_vis_d:"Ser la agencia de inversión distrital líder de América Latina, reconocida por conectar a Miraflores con los flujos globales de capital, talento y conocimiento.",
+  ns_val_e:"Valores",ns_val_t:"Cómo trabajamos",ns_v1:"Transparencia y probidad en cada gestión.",ns_v2:"Orientación a resultados con impacto medible.",ns_v3:"Colaboración público-privada.",ns_v4:"Vocación de servicio al inversionista y al ciudadano.",ns_v5:"Sostenibilidad como criterio transversal.",
+  ns_eq_e:"Gobernanza",ns_eq_t:"Una agencia con respaldo institucional.",ns_eq_d:"La agencia articula al gobierno distrital, el sector privado y los aliados internacionales bajo un modelo de gobernanza mixta. El directorio reúne a autoridades municipales, gremios empresariales y expertos independientes.",ns_eq_1t:"Directorio",ns_eq_1d:"Presidido por la Alcaldía de Miraflores, con representación de la Cámara de Comercio, gremios de turismo y gastronomía, y dos directores independientes.",ns_eq_2t:"Dirección ejecutiva",ns_eq_2d:"Un equipo ejecutivo de 8 profesionales en atracción de inversión, cooperación internacional, estudios y comunicaciones.",ns_eq_3t:"Aliados",ns_eq_3d:"Cámara de Comercio de Lima, PromPerú, ProInversión, universidades locales y agencias de cooperación internacional.",
+  iv_eyebrow:"Invierta en Miraflores",iv_title:"El mejor lugar del Perú para tu próxima inversión.",iv_lead:"Miraflores concentra calidad de vida, seguridad, turismo y un ecosistema empresarial único en Lima.",
+  iv_w_e:"Por qué Miraflores",iv_w_t:"Razones para invertir aquí.",iv_w_1t:"Ubicación estratégica",iv_w_1d:"Corazón turístico y de negocios de Lima, frente al Pacífico y con conectividad total.",iv_w_2t:"Calidad de vida",iv_w_2d:"Malecones, parques, cultura y servicios que atraen talento y residentes.",iv_w_3t:"Seguridad y gestión",iv_w_3d:"Uno de los distritos mejor gestionados del país, con institucionalidad sólida.",iv_w_4t:"Ecosistema empresarial",iv_w_4d:"Alta concentración de empresas, comercio, gastronomía y servicios financieros.",
+  iv_s_e:"Sectores estratégicos",iv_s_t:"Dónde están las oportunidades.",iv_s_1t:"Turismo y hotelería",iv_s_1d:"Epicentro del turismo limeño, con demanda constante de alojamiento y experiencias.",iv_s_2t:"Gastronomía",iv_s_2d:"Capital gastronómica: restaurantes de clase mundial y una escena en expansión.",iv_s_3t:"Tecnología y servicios",iv_s_3d:"Oficinas, coworking y empresas de servicios que buscan talento y ubicación.",iv_s_4t:"Inmobiliario",iv_s_4d:"Desarrollo residencial y comercial de alto valor con demanda sostenida.",iv_s_5t:"Economía creativa",iv_s_5d:"Cultura, diseño, entretenimiento y economía nocturna con identidad propia.",iv_s_6t:"Retail y comercio",iv_s_6d:"Comercio de alto tránsito y experiencias de consumo premium.",
+  iv_sv_e:"Servicios al inversionista",iv_sv_t:"Te acompañamos, gratis y en cada etapa.",iv_sv_1t:"Información estratégica",iv_sv_1d:"Datos, estudios y cifras del distrito para tomar decisiones informadas.",iv_sv_2t:"Facilitación de trámites",iv_sv_2d:"Orientación en licencias, permisos y normativa municipal.",iv_sv_3t:"Conexión con aliados",iv_sv_3d:"Te vinculamos con actores clave del ecosistema local.",iv_sv_4t:"Aftercare",iv_sv_4d:"Seguimiento posterior para que tu inversión crezca y se quede.",
+  iv_h_e:"Cómo invertir",iv_h_t:"Un proceso claro y acompañado.",iv_h_1t:"Contacto",iv_h_1d:"Nos escribes y agendamos una primera reunión.",iv_h_2t:"Diagnóstico",iv_h_2d:"Evaluamos tu proyecto y las oportunidades del distrito.",iv_h_3t:"Plan",iv_h_3d:"Diseñamos una hoja de ruta con hitos y aliados.",iv_h_4t:"Ejecución",iv_h_4d:"Acompañamos la instalación y el crecimiento.",iv_h_cta:"Iniciar mi inversión →",
+  co_eyebrow:"Cooperación internacional",co_title:"Aliados globales para un distrito local.",co_lead:"Gestionamos cooperación internacional que fortalece las capacidades del distrito y mejora la vida de sus vecinos.",
+  co_l_e:"Líneas de cooperación",co_l_t:"Dónde enfocamos las alianzas.",co_l_1t:"Desarrollo económico",co_l_1d:"Emprendimiento, empleo y fortalecimiento del tejido productivo local.",co_l_2t:"Sostenibilidad urbana",co_l_2d:"Movilidad limpia, espacios públicos y resiliencia climática.",co_l_3t:"Cultura y turismo",co_l_3d:"Cooperación para la identidad, el patrimonio y la economía creativa.",co_l_4t:"Innovación y gobierno",co_l_4d:"Modernización, GovTech y mejora de servicios al ciudadano.",
+  co_r_e:"Redes internacionales",co_r_t:"Miraflores en el mapa global.",co_r_d:"Participamos en redes de ciudades y plataformas de cooperación que conectan al distrito con buenas prácticas de todo el mundo.",co_r_1t:"Redes de ciudades",co_r_1d:"Miembro de redes iberoamericanas de ciudades y de plataformas de gobiernos locales por la innovación y el turismo sostenible.",co_r_2t:"Hermanamientos",co_r_2d:"Acuerdos de hermanamiento con distritos turísticos y costeros de la región, orientados a intercambio de buenas prácticas.",co_r_3t:"Organismos aliados",co_r_3d:"Colaboración con organismos multilaterales y agencias de cooperación en desarrollo urbano, cultura y sostenibilidad.",
+  no_eyebrow:"Noticias",no_title:"Lo que pasa en Miraflores.",no_lead:"Novedades de inversión, cooperación y eventos del distrito.",no_soon:"15 sep 2026",no_soon2:"28 ago 2026",no_soon3:"10 ago 2026",no_1:"Lanzamiento de la Agencia de Inversión de Miraflores",no_2:"Miraflores presenta su portafolio de oportunidades de inversión",no_3:"Nuevas alianzas de cooperación internacional para el distrito",no_note:"Contenido ilustrativo. Se reemplazará con noticias reales al entrar en operación.",
+  ev_e:"Próximos eventos",ev_t:"Agenda del distrito.",ev_soon:"OCT",ev_soon2:"NOV",ev_soon3:"NOV",ev_1t:"Foro de Inversión Miraflores",ev_1d:"Centro de Convenciones Miraflores · 15 de octubre",ev_2t:"Miraflores Summit de Cooperación",ev_2d:"Malecón de la Reserva · 6 de noviembre",ev_3t:"Ronda de negocios turismo y gastronomía",ev_3d:"Larcomar · 20 de noviembre",
+  ct_eyebrow:"Contacto",ct_title:"Hablemos de tu proyecto.",ct_lead:"¿Quieres invertir, cooperar o saber más sobre Miraflores? Escríbenos.",ct_f_e:"Escríbenos",ct_f_t:"Formulario",ct_nom:"Nombre",ct_ema:"Correo",ct_emp:"Empresa / Institución",ct_mot:"Motivo",ct_o1:"Quiero invertir en Miraflores",ct_o2:"Propuesta de cooperación",ct_o3:"Prensa",ct_o4:"Otro",ct_msg:"Mensaje",ct_send:"Enviar →",ct_note:"El formulario quedará operativo al conectarlo a un servicio como Formspree o Brevo. (Datos de contacto de ejemplo.)",ct_d_e:"Datos",ct_d_t:"Dónde estamos",ct_d_dir:"Miraflores, Lima, Perú",ct_d_addr:"Av. Larco 400, Miraflores, Lima 15074",ct_d_mail:"Correo",
+  ft_p:"Agencia de inversión y cooperación del distrito de Miraflores. Conectamos el distrito con el mundo.",ft_h1:"Explora",ft_h2:"Inversión",ft_h3:"Contacto",ft_loc:"Miraflores, Lima, Perú",ft_copy:"© 2026 Invest Miraflores. Propuesta.",ft_insp:"Agencia de inversión distrital."
+ },
+ en:{
+  skip:"Skip to content",
+  nav_home:"Home",nav_about:"About",nav_invest:"Invest in Miraflores",nav_why:"Why Miraflores",nav_sectors:"Strategic sectors",nav_services:"Investor services",nav_how:"How to invest",nav_coop:"Cooperation",nav_lines:"Cooperation lines",nav_networks:"International networks",nav_news:"News",nav_contact:"Contact",nav_cta:"Invest here",
+  h_eyebrow:"Miraflores · Lima · Peru",h_title:"Miraflores, where investment finds its place.",h_lead:"We are the agency connecting Miraflores with the world through investment, cooperation and strategic alliances that generate development and wellbeing for the district.",h_cta1:"Invest in Miraflores",h_cta2:"Cooperate with Miraflores",
+  h_m1:"investment projects supported",h_m2:"in facilitated investment",h_m3:"active international alliances",h_m4:"jobs generated",
+  b1:"Tourism",b2:"Gastronomy",b3:"Technology",b4:"Services",b5:"Real estate",b6:"Creative economy",b1b:"Tourism",b2b:"Gastronomy",b3b:"Technology",b4b:"Services",b5b:"Real estate",b6b:"Creative economy",
+  cn_eyebrow:"Miraflores connects with the world",cn_title:"Alliances that turn into opportunities.",cn_lead:"We foster links that connect the district with governments, companies, multilateral bodies and international networks to generate real impact. Through investment, cooperation and strategic relations, these connections become opportunities, knowledge and infrastructure for citizens.",
+  cn_1_t:"Investment",cn_1_d:"We support national and international companies that want to establish or grow in Miraflores.",cn_more:"Read more →",
+  cn_2_t:"Cooperation",cn_2_d:"We manage international cooperation for high-impact projects in the district.",cn_more2:"Read more →",
+  cn_3_t:"Relations",cn_3_d:"We connect Miraflores with global city and investment networks.",cn_more3:"Read more →",
+  hw_eyebrow:"How to invest",hw_title:"Your investment in Miraflores, step by step.",hw_1_t:"Contact us",hw_1_d:"Tell us about your project and what you seek in the district.",hw_2_t:"Assessment",hw_2_d:"We analyze opportunities, incentives and location.",hw_3_t:"Support",hw_3_d:"We guide you through procedures, permits and local partners.",hw_4_t:"Landing",hw_4_d:"Your investment materializes and we follow up.",hw_cta:"See the process →",
+  tt_eyebrow:"Testimonials",tt_title:"What those who chose Miraflores say.",tt_note:"Reference testimonials for the mockup. Replace with real cases before publishing.",tt_1_q:"\"Miraflores combines quality of life, safety and a business ecosystem we couldn't find in any other district of Lima.\"",tt_1_n:"Andrea Salcedo",tt_1_r:"General Manager, Pacífico Hotel Group",tt_2_q:"\"The agency's support made setting up our offices simple and fast.\"",tt_2_n:"Martín Escobedo",tt_2_r:"Head of Expansion, TechLatam",tt_3_q:"\"Betting on Miraflores meant betting on the tourist and economic heart of Lima.\"",tt_3_n:"Carla Ferreyros",tt_3_r:"Founder, Distrito Gastronómico",
+  c_title:"Ready to invest in Miraflores?",c_p:"Let's talk about your project. We support you every step of the way.",c_btn:"Contact us →",
+  ns_eyebrow:"About",ns_title:"The agency that opens Miraflores to the world.",ns_lead:"We are the investment and cooperation agency of the Miraflores district: a bridge between the territory and global opportunities.",
+  ns_mv_e:"Mission & vision",ns_mis_t:"Our mission",ns_mis_d:"To attract quality investment and manage international cooperation that drives the economic, social and sustainable development of Miraflores, positioning the district as a benchmark of competitiveness in Peru and the region.",ns_vis_t:"Our vision",ns_vis_d:"To be the leading district investment agency in Latin America, recognized for connecting Miraflores with global flows of capital, talent and knowledge.",
+  ns_val_e:"Values",ns_val_t:"How we work",ns_v1:"Transparency and integrity in every action.",ns_v2:"Results orientation with measurable impact.",ns_v3:"Public-private collaboration.",ns_v4:"Service to investors and citizens.",ns_v5:"Sustainability as a cross-cutting criterion.",
+  ns_eq_e:"Governance",ns_eq_t:"An agency with institutional backing.",ns_eq_d:"The agency articulates the district government, the private sector and international partners under a mixed governance model. The board brings together municipal authorities, business associations and independent experts.",ns_eq_1t:"Board",ns_eq_1d:"Chaired by the Mayor of Miraflores, with representation from the Chamber of Commerce, tourism and gastronomy associations, and two independent directors.",ns_eq_2t:"Executive direction",ns_eq_2d:"An executive team of 8 professionals in investment attraction, international cooperation, research and communications.",ns_eq_3t:"Partners",ns_eq_3d:"Lima Chamber of Commerce, PromPerú, ProInversión, local universities and international cooperation agencies.",
+  iv_eyebrow:"Invest in Miraflores",iv_title:"The best place in Peru for your next investment.",iv_lead:"Miraflores concentrates quality of life, safety, tourism and a business ecosystem unique in Lima.",
+  iv_w_e:"Why Miraflores",iv_w_t:"Reasons to invest here.",iv_w_1t:"Strategic location",iv_w_1d:"The tourist and business heart of Lima, facing the Pacific and fully connected.",iv_w_2t:"Quality of life",iv_w_2d:"Boardwalks, parks, culture and services that attract talent and residents.",iv_w_3t:"Safety and management",iv_w_3d:"One of the best-managed districts in the country, with solid institutions.",iv_w_4t:"Business ecosystem",iv_w_4d:"High concentration of companies, retail, gastronomy and financial services.",
+  iv_s_e:"Strategic sectors",iv_s_t:"Where the opportunities are.",iv_s_1t:"Tourism & hospitality",iv_s_1d:"The epicenter of Lima's tourism, with constant demand for lodging and experiences.",iv_s_2t:"Gastronomy",iv_s_2d:"A culinary capital: world-class restaurants and a growing scene.",iv_s_3t:"Technology & services",iv_s_3d:"Offices, coworking and service companies seeking talent and location.",iv_s_4t:"Real estate",iv_s_4d:"High-value residential and commercial development with steady demand.",iv_s_5t:"Creative economy",iv_s_5d:"Culture, design, entertainment and nightlife with its own identity.",iv_s_6t:"Retail & commerce",iv_s_6d:"High-traffic retail and premium consumer experiences.",
+  iv_sv_e:"Investor services",iv_sv_t:"We support you, free of charge, at every stage.",iv_sv_1t:"Strategic information",iv_sv_1d:"Data, studies and figures about the district to make informed decisions.",iv_sv_2t:"Procedure facilitation",iv_sv_2d:"Guidance on licenses, permits and municipal regulations.",iv_sv_3t:"Partner connections",iv_sv_3d:"We link you with key players in the local ecosystem.",iv_sv_4t:"Aftercare",iv_sv_4d:"Follow-up so your investment grows and stays.",
+  iv_h_e:"How to invest",iv_h_t:"A clear, supported process.",iv_h_1t:"Contact",iv_h_1d:"You write to us and we schedule a first meeting.",iv_h_2t:"Assessment",iv_h_2d:"We evaluate your project and the district's opportunities.",iv_h_3t:"Plan",iv_h_3d:"We design a roadmap with milestones and partners.",iv_h_4t:"Execution",iv_h_4d:"We support setup and growth.",iv_h_cta:"Start my investment →",
+  co_eyebrow:"International cooperation",co_title:"Global partners for a local district.",co_lead:"We manage international cooperation that strengthens the district's capacities and improves residents' lives.",
+  co_l_e:"Cooperation lines",co_l_t:"Where we focus alliances.",co_l_1t:"Economic development",co_l_1d:"Entrepreneurship, employment and strengthening the local productive fabric.",co_l_2t:"Urban sustainability",co_l_2d:"Clean mobility, public spaces and climate resilience.",co_l_3t:"Culture & tourism",co_l_3d:"Cooperation for identity, heritage and the creative economy.",co_l_4t:"Innovation & government",co_l_4d:"Modernization, GovTech and better citizen services.",
+  co_r_e:"International networks",co_r_t:"Miraflores on the global map.",co_r_d:"We take part in city networks and cooperation platforms that connect the district with best practices worldwide.",co_r_1t:"City networks",co_r_1d:"Member of Ibero-American city networks and local-government platforms for innovation and sustainable tourism.",co_r_2t:"Twinnings",co_r_2d:"Twinning agreements with tourist and coastal districts in the region, focused on best-practice exchange.",co_r_3t:"Allied bodies",co_r_3d:"Collaboration with multilateral bodies and cooperation agencies in urban development, culture and sustainability.",
+  no_eyebrow:"News",no_title:"What's happening in Miraflores.",no_lead:"Investment, cooperation and event news from the district.",no_soon:"Sep 15, 2026",no_soon2:"Aug 28, 2026",no_soon3:"Aug 10, 2026",no_1:"Launch of the Miraflores Investment Agency",no_2:"Miraflores presents its portfolio of investment opportunities",no_3:"New international cooperation alliances for the district",no_note:"Illustrative content. To be replaced with real news once operating.",
+  ev_e:"Upcoming events",ev_t:"District agenda.",ev_soon:"OCT",ev_soon2:"NOV",ev_soon3:"NOV",ev_1t:"Miraflores Investment Forum",ev_1d:"Miraflores Convention Center · October 15",ev_2t:"Miraflores Cooperation Summit",ev_2d:"Malecón de la Reserva · November 6",ev_3t:"Tourism & gastronomy business round",ev_3d:"Larcomar · November 20",
+  ct_eyebrow:"Contact",ct_title:"Let's talk about your project.",ct_lead:"Want to invest, cooperate or learn more about Miraflores? Write to us.",ct_f_e:"Write to us",ct_f_t:"Form",ct_nom:"Name",ct_ema:"Email",ct_emp:"Company / Institution",ct_mot:"Reason",ct_o1:"I want to invest in Miraflores",ct_o2:"Cooperation proposal",ct_o3:"Press",ct_o4:"Other",ct_msg:"Message",ct_send:"Send →",ct_note:"The form will work once connected to a service like Formspree or Brevo. (Sample contact details.)",ct_d_e:"Details",ct_d_t:"Where we are",ct_d_dir:"Miraflores, Lima, Peru",ct_d_addr:"Av. Larco 400, Miraflores, Lima 15074",ct_d_mail:"Email",
+  ft_p:"Investment and cooperation agency of the Miraflores district. We connect the district with the world.",ft_h1:"Explore",ft_h2:"Investment",ft_h3:"Contact",ft_loc:"Miraflores, Lima, Peru",ft_copy:"© 2026 Invest Miraflores. Proposal.",ft_insp:"District investment agency."
+ }
+};
+
+(function(){
+  var pages=document.querySelectorAll('.page');
+  var menu=document.getElementById('nav-menu');
+  var toggle=document.querySelector('.menu-toggle');
+  var currentLang='es';
+
+  function applyLang(lang){
+    currentLang=lang;
+    document.documentElement.setAttribute('lang',lang);
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      var k=el.getAttribute('data-i18n');var v=I18N[lang][k];
+      if(v===undefined)return;
+      if(el.tagName==='META')el.setAttribute('content',v);else el.textContent=v;
+    });
+    document.querySelectorAll('[data-lang-btn]').forEach(function(b){
+      var a=b.getAttribute('data-lang-btn')===lang;b.classList.toggle('active',a);b.setAttribute('aria-pressed',a?'true':'false');
+    });
+    try{localStorage.setItem('mf_lang',lang);}catch(e){}
+  }
+
+  function applyReveal(scope){
+    var pr=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var rev=scope.querySelectorAll('.reveal');
+    if(pr||!('IntersectionObserver'in window)){rev.forEach(function(el){el.classList.add('is-visible');});return;}
+    var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('is-visible');io.unobserve(e.target);}});},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+    rev.forEach(function(el){el.classList.remove('is-visible');io.observe(el);});
+  }
+
+  function showPage(name,anchor){
+    pages.forEach(function(p){p.classList.remove('is-active');});
+    var t=document.getElementById('page-'+name);
+    if(!t){t=document.getElementById('page-inicio');name='inicio';}
+    t.classList.add('is-active');
+    document.querySelectorAll('.nav-item').forEach(function(it){it.classList.remove('is-current');});
+    document.querySelectorAll('[data-go="'+name+'"]').forEach(function(a){var li=a.closest('.nav-item');if(li)li.classList.add('is-current');});
+    try{history.replaceState(null,'','#'+name+(anchor?('/'+anchor):''));}catch(e){}
+    applyReveal(t);
+    if(anchor){var el=document.getElementById(anchor);if(el){setTimeout(function(){el.scrollIntoView({behavior:'smooth',block:'start'});},60);return;}}
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+
+  document.addEventListener('click',function(e){
+    var link=e.target.closest('[data-go]');if(!link)return;
+    e.preventDefault();
+    if(menu){menu.classList.remove('is-open');if(toggle)toggle.setAttribute('aria-expanded','false');}
+    showPage(link.getAttribute('data-go'),link.getAttribute('data-anchor'));
+  });
+  if(toggle&&menu){toggle.addEventListener('click',function(){var o=menu.classList.toggle('is-open');toggle.setAttribute('aria-expanded',o?'true':'false');});}
+  document.querySelectorAll('[data-lang-btn]').forEach(function(b){b.addEventListener('click',function(){applyLang(b.getAttribute('data-lang-btn'));});});
+
+  var initLang='es';
+  try{var s=localStorage.getItem('mf_lang');if(s&&I18N[s])initLang=s;else if(navigator.language&&navigator.language.startsWith('en'))initLang='en';}catch(e){}
+  applyLang(initLang);
+
+  function fromHash(){var h=(location.hash||'').replace('#','');if(!h){showPage('inicio');return;}var p=h.split('/');showPage(p[0],p[1]);}
+  fromHash();
+  window.addEventListener('hashchange',fromHash);
+})();
+</script>
+</body>
+</html>
